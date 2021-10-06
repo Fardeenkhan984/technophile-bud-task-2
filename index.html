@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container ">
+        <header class="header">
+            <h1 id="title">
+                College Survey Form
+            </h1>
+            <p id="description">
+                Thank you for taking the time to help us.
+            </p>
+        </header>
+        <form action="" id="survey-form">
+
+            <!-- Text section -->
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" class="formControl" placeholder="Enter your name" required>
+            </div>
+            <!-- end of text section -->
+
+            <!-- Type Email section -->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="formControl" placeholder="Enter your Email" required>
+            </div>
+            <!-- end of Email section -->
+
+            <!-- Type Number section -->
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="number" name="phone" id="phone" class="formControl" placeholder="Enter your phone number" required>
+            </div>
+            <!-- end of Number section -->
+
+            <!-- Type Number section -->
+            <div class="form-group">
+                <label for="address">Address <span class="clue">(optional)</span></label>
+                <input type="text" name="address" id="address" class="formControl" placeholder="Enter your address">
+            </div>
+            <!--  end of number section -->
+
+            <!-- select section -->
+            <div class="form-group">
+                <p id="quest">Which option best describe your current role</p>
+                <select name="role" required id="dropdown" class="formControl">
+                    <option value disabled selected >Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Job</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <!-- end of select section -->
+
+            <!-- radio button section -->
+            
+            <div class="form-group">
+                <p id="quest">1. Are you satisfied with the teaching staff and their teaching methods? </p>
+                <label for="">
+                    <input type="radio" name="source" value="Very satisfied" class="inputRadio"> Very satisfied </label>
+                <label for="">
+                    <input type="radio" name="source" value="satisfied" class="inputRadio"> satisfied </label>
+                <label for="">
+                    <input type="radio" name="source" value="Neutral" class="inputRadio"> Neutral </label>
+                <label for="">
+                    <input type="radio" name="source" value="Dissatisfied" class="inputRadio"> Dissatisfied </label>
+                <label for="">
+                    <input type="radio" name="source" value="Very dissatisfied" class="inputRadio"> Very dissatisfied </label>
+            </div>
+        
+            <!-- end of radio button -->
+
+            <!-- 2nd radio button section -->
+            <div class="form-group">
+                <p id="quest">2. How satisfied are you with the cleanliness and variety of food items available in the cafeteria? </p>
+                <label for="">
+                    <input type="radio" name="source2" value="Very satisfied" class="inputRadio"> Very satisfied </label>
+                <label for="">
+                    <input type="radio" name="source2" value="satisfied" class="inputRadio"> satisfied </label>
+                <label for="">
+                    <input type="radio" name="source2" value="Neutral" class="inputRadio"> Neutral </label>
+                <label for="">
+                    <input type="radio" name="source2" value="Dissatisfied" class="inputRadio"> Dissatisfied </label>
+                <label for="">
+                    <input type="radio" name="source2" value="Very dissatisfied" class="inputRadio"> Very dissatisfied </label>
+            </div>
+            <!-- end of 2nd radio button -->
+
+            <!-- 3rd radio button section -->
+            <div class="form-group">
+                <p id="quest">3. What do you think about extracurricular activities? </p>
+                <label for="">
+                    <input type="radio" name="source3" value="freinds" class="inputRadio"> They are too few </label>
+                <label for="">
+                    <input type="radio" name="source3" value="They are just right" class="inputRadio"> They are just right </label>
+                <label for="">
+                    <input type="radio" name="source3" value="I was overwhelmed with the number" class="inputRadio"> I was overwhelmed with the number </label>
+            </div>
+            <!-- end of 3rd radio button -->
+
+            <!-- 4th radio button section -->
+            <div class="form-group">
+                <p id="quest">4.  Do you think your siblings or friends will be benefited by studying at this college? </p>
+                <label for="">
+                    <input type="radio" name="source4" value="Definitely, Yes" class="inputRadio"> Definitely, Yes </label>
+                <label for="">
+                    <input type="radio" name="source4" value="Probably, Yes" class="inputRadio"> Probably, Yes </label>
+                <label for="">
+                    <input type="radio" name="source4" value="Probably, No" class="inputRadio"> Probably, No </label>
+                <label for="">
+                    <input type="radio" name="source4" value="Definitely, No" class="inputRadio"> Definitely, No </label>
+                <label for="">
+                    <input type="radio" name="source4" value="Can’t say" class="inputRadio"> Can’t say </label>
+            </div>
+            <!-- end of 4th radio button -->
+
+            <!-- 5th radio button section -->
+            <div class="form-group">
+                <p id="quest">5.  How about your overall experience with this college? </p>
+                <label for="">
+                    <input type="radio" name="source5" value="Amazing" class="inputRadio"> Amazing </label>
+                <label for="">
+                    <input type="radio" name="source5" value="Can't say" class="inputRadio"> Can't say </label>
+                <label for="">
+                    <input type="radio" name="source5" value="Bad experience" class="inputRadio"> Bad experience </label>
+            </div>
+            <!-- end of 5th radio button -->
+
+            <!-- Textarea section -->
+            <div class="form-group">
+                <p id="quest">Please provide us with additional feedback on areas that need improvement.</p>
+                <textarea name="feedback"  cols="30" rows="5"  id="feedback" class="textarea" placeholder="Enter your feedback here..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
